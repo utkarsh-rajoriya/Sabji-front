@@ -1,0 +1,46 @@
+/* 🔹 NAVBAR STYLING */
+.navbar {
+  background: linear-gradient(to right, #2e8b57, #ff8c00); /* Green to Orange */
+  padding: 8px 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 NAV LINKS */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🟢 ACTIVE LINK HIGHLIGHT */
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* 🔹 HOVER EFFECT */
+.navbar-nav .nav-link:hover {
+  color: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* 🔍 SEARCH BAR */
+.form-control {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 15px;
+}
+
+.btn-outline-light {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: #ff8c00;
+}

@@ -1,0 +1,93 @@
+/* 🌿 BODY - Background with Smooth Gradient */
+body {
+  background: linear-gradient(to right, #2e8b57, #ffa500); /* Green to Orange */
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌟 HOMEPAGE CONTAINER */
+.homepage-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* 🥬 TITLE - "Apni Sabji Wale" */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ffdd99, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+/* 🥕 SABJI CONTAINER */
+.sabji-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 🍅 SABJI CARD */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 240px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 🥦 CARD HEADINGS */
+.card h3 {
+  color: #ffdd99;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* 🍆 CARD PRICE */
+.card p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* 🥑 CARD IMAGE */
+.card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ❌ NO DATA MESSAGE */
+.no-data {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffdd99;
+  margin-top: 20px;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .sabji-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
