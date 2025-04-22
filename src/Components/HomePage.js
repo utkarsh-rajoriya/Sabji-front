@@ -7,7 +7,8 @@ export default function HomePage() {
 
   let fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:8080/");
+      console.log(process.env.REACT_APP_BACKEND_URL)
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/`);
       const result = await response.json();
       setData(result);
     } catch (error) {

@@ -6,7 +6,7 @@ export default function SabjiCard({ name, rate, image }) {
     <div className="sabji-card">
       {image ? (
         <img
-          src={`http://localhost:8080/images/${image}`}
+          src={`${process.env.REACT_APP_BACKEND_URL}/images/${image}`}
           alt={name}
           className="sabji-img"
         />

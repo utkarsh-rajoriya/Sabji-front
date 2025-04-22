@@ -18,11 +18,11 @@ export default function AddSabji() {
       formData.append("sabji", JSON.stringify({ name, rate })); // Convert object to JSON
       formData.append("imageFile", image); // Append image file
   
-      const response = await fetch("http://localhost:8080/addSabji", {
+      const response = await fetch(`https://dynamic-reprieve-production.up.railway.app/addSabji`, {
         method: "POST",
         body: formData,
       });
-  
+      
       if (response.ok) {
         alert("Sabji added successfully!");
         setName("");
